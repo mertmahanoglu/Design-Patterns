@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Singleton\Singleton.csproj", "{FCE9C6AC-1F0D-4359-BD4E-E6E331E1249E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "Factory\Factory.csproj", "{BE5C54BD-8A67-43F9-A7E1-7B92EA0EFDF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FCE9C6AC-1F0D-4359-BD4E-E6E331E1249E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCE9C6AC-1F0D-4359-BD4E-E6E331E1249E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCE9C6AC-1F0D-4359-BD4E-E6E331E1249E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE5C54BD-8A67-43F9-A7E1-7B92EA0EFDF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE5C54BD-8A67-43F9-A7E1-7B92EA0EFDF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE5C54BD-8A67-43F9-A7E1-7B92EA0EFDF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE5C54BD-8A67-43F9-A7E1-7B92EA0EFDF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
