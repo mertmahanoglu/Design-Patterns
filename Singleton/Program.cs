@@ -20,6 +20,7 @@ namespace Singleton
     class ProductOperations
     {
         static ProductOperations _productOperations;
+        static object _lock = new object();
 
         //Prevent to create new object 
         private ProductOperations()
@@ -29,7 +30,19 @@ namespace Singleton
 
         public static ProductOperations CreateAsSingleton()
         {
-            return _productOperations ?? (_productOperations = new ProductOperations());
+            /* 
+             * return _productOperations ?? (_productOperations = new ProductOperations());
+             */
+            //THREAD SAFE Singleton
+            lock (_lock)
+            {
+                if (_productOperations==null)
+                {
+                    _productOperations = new ProductOperations();
+                }
+            }
+            return _productOperations;
+
         }
 
         public void SaveProduct()
